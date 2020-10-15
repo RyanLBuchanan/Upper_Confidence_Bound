@@ -9,6 +9,14 @@ import pandas as pd
 dataset = pd.read_csv('Ads_CTR_Optimisation.csv')
 
 # Implement the Upper Confidence Bound algorithm
+# Number of users
+N = 10000
+# Number of adds
+d = 10 
+ads_selected = []
+numbers_of_selections = [0] * d
+sums_of_rewards = [0] * d
+total_reward = 0
 
 
 # Visualize the results
