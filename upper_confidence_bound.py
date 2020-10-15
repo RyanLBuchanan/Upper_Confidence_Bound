@@ -14,7 +14,9 @@ N = 10000
 # Number of adds
 d = 10 
 ads_selected = []
+# N_i(n)
 numbers_of_selections = [0] * d
+# R_i(n)
 sums_of_rewards = [0] * d
 total_reward = 0
 
@@ -28,6 +30,10 @@ for n in range(0, N):
     ad = 0
     max_upper_bound = 0
     for i in range(0, d):
-        
+        if (numbers_of_selections[i] > 0):
+            # r_bar(n)
+            average_reward = sums_of_rewards[i] / numbers_of_selections[i]
+            delta_i = math.sqrt(3/2 * math.log(n + 1) / numbers_of_selections)
+            
 
 # Visualize the results
