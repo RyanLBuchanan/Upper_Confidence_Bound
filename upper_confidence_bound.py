@@ -18,5 +18,16 @@ numbers_of_selections = [0] * d
 sums_of_rewards = [0] * d
 total_reward = 0
 
+# Step 2: 
+#       -> Compute the average reward of ad i up to round n
+#       -> Compute the confidence interval
+# Import math library for square root function
+import math
+  
+for n in range(0, N):
+    ad = 0
+    max_upper_bound = 0
+    for i in range(0, d):
+        
 
 # Visualize the results
