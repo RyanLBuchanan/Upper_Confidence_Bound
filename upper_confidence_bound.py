@@ -46,6 +46,10 @@ for n in range(0, N):
     reward = dataset.values[n, ad]
     sums_of_rewards[ad] = sums_of_rewards[ad] + reward
     total_reward = total_reward + reward
-    
 
 # Visualize the results
+plt.hist(ads_selected)
+plt.title('Histogram of Ads Selections')
+plt.xlabel('SUV adds')
+plt.ylabel('# of Times Ad Selected')
+plt.show()
