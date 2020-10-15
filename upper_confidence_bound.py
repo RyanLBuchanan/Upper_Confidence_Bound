@@ -35,6 +35,11 @@ for n in range(0, N):
             average_reward = sums_of_rewards[i] / numbers_of_selections[i]
             delta_i = math.sqrt(3/2 * math.log(n + 1) / numbers_of_selections)
             upper_bound = average_reward + delta_i
+        # Step 3: Select the add i that has the maximum upper bound
         else:
+            upper_bound = 1e400
+        if (upper_bound > max_upper_bound):
+            max_upper_bound = upper_bound
+            ad =  i 
 
 # Visualize the results
