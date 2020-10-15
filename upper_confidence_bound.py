@@ -41,5 +41,11 @@ for n in range(0, N):
         if (upper_bound > max_upper_bound):
             max_upper_bound = upper_bound
             ad =  i 
+    ads_selected.append(ad)
+    numbers_of_selections[ad] = numbers_of_selections[ad] + 1
+    sums_of_rewards[ads] = sums_of_rewards[ad] + dataset.values[n, ad]
+    sums_of_rewards[ad] = sums_of_rewards[ad] + reward
+    total_reward = total_reward + reward
+    
 
 # Visualize the results
