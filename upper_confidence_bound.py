@@ -34,6 +34,7 @@ for n in range(0, N):
             # r_bar(n)
             average_reward = sums_of_rewards[i] / numbers_of_selections[i]
             delta_i = math.sqrt(3/2 * math.log(n + 1) / numbers_of_selections)
+            upper_bound = average_reward + delta_i
             
 
 # Visualize the results
